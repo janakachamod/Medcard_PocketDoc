@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileManage">
+
+        <!-- Address EditText -->
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="300dp"
+            android:textColorHint="@color/black"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:hint="Enter your address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+        <!-- Telephone Number EditText -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="200dp"
+            android:hint="Enter your name"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAddress" />
+
+        <ImageView
+            android:id="@+id/imageViewProfilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="117dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="90dp"
+            android:src="@drawable/uimg"
+            app:layout_constraintBottom_toBottomOf="@id/editTextName"
+            app:layout_constraintEnd_toEndOf="@id/editTextName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:text="Enter your blood group:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textColor="@color/black"
+            android:text="A"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="36dp"
+            android:text="B"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupA"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textColorHint="@color/black"
+            android:text="AB"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupO"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="O"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <TextView
+            android:id="@+id/textViewtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="Enter your blood type:"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodtype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:text="Positive"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupA"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodtype2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:text="Negative"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupO"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="590dp"
+            android:background="@drawable/btn"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/newUser"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="590dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

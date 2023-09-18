@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgmed2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgmed2">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="29dp"
+                android:text="GAS COMPOSITION"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="8dp"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/txt_title"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Bad Composition"
+                        android:textColor="@color/tcolor"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/situationalert"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_marginRight="50dp"
+                        android:layout_gravity="center"
+                        android:thumb="@drawable/thumb"
+                        android:track="@drawable/track"
+                        android:checked="false" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/linear_layout_1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/bgmed2"
+                android:id="@+id/linear_layout_3">
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/linear_layout_1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="45dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/liner"
+                        android:elevation="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/co2"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="15dp"
+                            android:text="Carbon Dioxide"
+                            android:textSize="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/co2"
+                            android:gravity="center"
+                            android:text="Value"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/liner"
+                        android:elevation="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/nh4"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="15dp"
+                            android:text="Ammonia Gas"
+                            android:textSize="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/nh4"
+                            android:gravity="center"
+                            android:text="Value"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/liner"
+                        android:elevation="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/co"/>
+
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="15dp"
+                            android:text="Carbon Monoxide"
+                            android:textSize="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/co"
+                            android:gravity="center"
+                            android:text="Value"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/liner"
+                        android:elevation="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/tu"/>
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="15dp"
+                            android:text="Toluene"
+                            android:textSize="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/toluene"
+                            android:gravity="center"
+                            android:text="Value"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/linear_layout_3"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:text="Click To Watch Charts Of Gases"
+                        android:id="@+id/charts"
+                        android:background="@drawable/btn"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

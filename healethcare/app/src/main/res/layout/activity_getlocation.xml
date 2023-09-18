@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="30dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="42dp"
+        android:layout_toStartOf="@id/textView"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/navigationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="144dp"
+        android:onClick="onNavigationButtonClick"
+        android:text="Navigate" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="381dp"
+        android:layout_height="500dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

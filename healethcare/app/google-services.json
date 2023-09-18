@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "408964094581",
+    "firebase_url": "https://finaltest-3f641-default-rtdb.firebaseio.com",
+    "project_id": "finaltest-3f641",
+    "storage_bucket": "finaltest-3f641.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408964094581:android:75364af8ede2049380b63c",
+        "android_client_info": {
+          "package_name": "com.assessment3.medicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiqZBlb53r8DyeKsmlacs_tijnj6YFCeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408964094581:android:622d1d1a640a25b880b63c",
+        "android_client_info": {
+          "package_name": "com.assessment3.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiqZBlb53r8DyeKsmlacs_tijnj6YFCeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408964094581:android:043b8822da3dab5280b63c",
+        "android_client_info": {
+          "package_name": "com.assessment3.testone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408964094581-fhb64fp2ub7ossjfr50o84llep33julc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.assessment3.testone",
+            "certificate_hash": "9e37309391a60c5adc59e302f1a626e9ffc8f971"
+          }
+        },
+        {
+          "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiqZBlb53r8DyeKsmlacs_tijnj6YFCeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408964094581-rgucq4a726gc4j1qail2hu5sm73cff90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

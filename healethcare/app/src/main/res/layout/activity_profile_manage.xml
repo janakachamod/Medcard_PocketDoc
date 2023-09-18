@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileManage">
+
+        <!-- Address EditText -->
+
+        <!-- Telephone Number EditText -->
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:hint="Enter your address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="232dp"
+            android:hint="Enter your name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Blood Group TextView -->
+        <!-- Blood Group Checkboxes -->
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAddress" />
+
+        <ImageView
+            android:id="@+id/imageViewProfilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="108dp"
+            android:src="@drawable/images"
+            app:layout_constraintBottom_toBottomOf="@id/editTextName"
+            app:layout_constraintEnd_toEndOf="@id/editTextName" />
+
+        <TextView
+            android:id="@+id/textViewBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter your blood group:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="A"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="B"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupA"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="AB"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupO"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodGroupO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="O"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <TextView
+            android:id="@+id/textViewtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="Enter your blood type:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodtype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:text="Positive"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupAB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupA"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBloodtype2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:text="Negative"
+            app:layout_constraintEnd_toStartOf="@id/checkBoxBloodGroupO"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/checkBoxBloodGroupB"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber" />
+
+
+
+
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="632dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/newUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="632dp"
+            android:layout_marginEnd="48dp"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

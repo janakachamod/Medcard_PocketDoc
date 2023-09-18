@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/Dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/d"
+            />
+        <item android:id="@+id/Location"
+            android:title="Hospital Location"
+            android:icon="@drawable/l"/>
+        <item android:id="@+id/Set_location"
+            android:title="current Location"
+            android:icon="@drawable/l"/>
+        <item android:id="@+id/Gas_composition"
+            android:title="Gas Composition"
+            android:icon="@drawable/air"/>
+        <item android:id="@+id/User_Details"
+            android:title="User Profile"
+            android:icon="@drawable/u"/>
+        <item android:id="@+id/PrfileManage"
+            android:title="Update profile"
+            android:icon="@drawable/u"/>
+        <item android:id="@+id/SetAlert"
+            android:title="Reminder"
+            android:icon="@drawable/bell"/>
+        <item android:id="@+id/makecall"
+            android:title="Contact"
+            android:icon="@drawable/uimg"/>
+        <item android:id="@+id/Logout"
+            android:title="Exit"
+            android:icon="@drawable/lo"/>
+
+    </group>
+
+</menu>
